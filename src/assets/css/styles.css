@@ -1,0 +1,101 @@
+body {
+    background-color: #030620;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 600px;
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.inputs {
+    padding: 10px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #2e2e4d;
+    color: #fff;
+    font-size: 16px;
+}
+
+.inputs::placeholder {
+    color: #aaa;
+}
+
+.inputs:focus {
+    outline: none;
+    border-color: #5e5ec2;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5e5ec2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    grid-column: span 2; 
+
+}
+
+button:hover {
+    background-color: #4444cc;
+}
+
+.constancia-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: span 2;
+    margin-top: 15px;
+}
+
+.constancia-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.constancia-select {
+    padding: 10px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #2e2e4d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 40%;
+}

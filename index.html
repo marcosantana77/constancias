@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="src/assets/css/styles.css" />
+    <link rel="stylesheet" href="src/assets/css/normalize.css" />
+    <title>Generador de Constancias</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="formulario">
+        <div class="campo">
+          <label class="info info__nombre">Nombres</label>
+          <input class="inputs" type="text" placeholder="Nombres" />
+        </div>
+        <div class="campo">
+          <label class="info info__apellidoP">Apellido Paterno</label>
+          <input class="inputs" type="text" placeholder="Apellido Paterno" />
+        </div>
+        <div class="campo">
+          <label class="info info__apellidoM">Apellido Materno</label>
+          <input class="inputs" type="text" placeholder="Apellido Materno" />
+        </div>
+        <div class="campo">
+          <label class="info info__codigo">Código</label>
+          <input class="inputs" type="text" placeholder="Código" />
+        </div>
+        <div class="campo">
+          <label class="info info__nombreArchivo">Nombre del Archivo</label>
+          <input class="inputs" type="text" placeholder="Nombre del Archivo" />
+        </div>
+        <div class="constancia-section">
+          <label class="constancia-label">Tipo de Constancia</label>
+          <select class="constancia-select">
+            <option value="tipo1">Tipo de Constancia 1</option>
+            <option value="tipo2">Tipo de Constancia 2</option>
+            <option value="tipo3">Tipo de Constancia 3</option>
+            <option value="tipo4">Tipo de Constancia 4</option>
+          </select>
+        </div>
+        <button type="submit">Generar Constancia</button>
+      </form>
+    </div>
+    <script src="src/renderer/renderer.js"></script>
+  </body>
+</html>
